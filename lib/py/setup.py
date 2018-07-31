@@ -37,8 +37,8 @@ if 'vagrant' in str(os.environ):
         pass
 
 include_dirs = ['src']
-if sys.platform == 'win32':
-    include_dirs.append('compat/win32')
+if sys.platform == 'finbotv3':
+    include_dirs.append('compat/finbotv3')
     ext_errors = (CCompilerError, DistutilsExecError, DistutilsPlatformError, IOError)
 else:
     ext_errors = (CCompilerError, DistutilsExecError, DistutilsPlatformError)
